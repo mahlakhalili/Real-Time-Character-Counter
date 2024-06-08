@@ -1,3 +1,10 @@
 const textareaEl = document.getElementById("textarea");
+const totalCounterEl = document.getElementById("total-counter")
 
-textareaEl.addEventListener()
+textareaEl.addEventListener("keyup" , ()={
+    updateCounter()
+})
+
+function updateCounter(){
+  totalCounterEl.innerText =  textareaEl.value.length
+}
